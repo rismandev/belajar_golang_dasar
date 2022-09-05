@@ -1,19 +1,16 @@
 # Belajar Go-Lang Dasar
 
-## Tipe Data Boolean
+## Tipe Data String
 
-1. True (logic when 1 == 1)
-2. False (logic when 2 == 1)
+### Tipe data string diisi dengan "(tanda petik dua) dan diakhiri dengan "(tanda petik dua lagi)
 
-### Buat file boolean.go
+## Fungsi untuk Tipe Data String
+
+1. len("string") => Untuk menghitung jumlah karakter
+2. "string"[number] => Untuk mengambil karakter pada posisi yang ditentukan
+
+### Buat file string.go
 
 ```
-package main
 
-import "fmt"
-
-func main() {
-	fmt.Println("True = ", true)
-	fmt.Println("False = ", false)
-}
 ```
