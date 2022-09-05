@@ -1,29 +1,31 @@
 # Belajar Go-Lang Dasar
 
-## Deklarasi Variable
+## Variable Constant
 
-### Kata kunci var
+### Deklarasi Variable Constant
 ```
-var name string
-name = "Rimuru Tempest"
-```
-
-### Mengisi nilai default
-```
-var name = "Rimuru Tempest"
+const firstName string = "Rimuru"
+const lastName = "Tempest"
 ```
 
-### Tanpa menggunakan kata kunci var (:=)
+### Deklarasi Multiple Variable Constant
 ```
-name := "Rimuru Tempest"
-```
-
-## Deklarasi Multiple Variable
-```
-var (
+const (
 	firstName = "Rimuru"
 	lastName = "Tempest"
 )
+```
+
+### Nilai Variable Constant tidak dapat diubah
+```
+const (
+	firstName = "Rimuru"
+	lastName = "Tempest"
+)
+
+// Error
+firstName = "Veldanava"
+lastName = "Milim"
 ```
 
 ## Buat file variable.go
@@ -33,26 +35,24 @@ package main
 import "fmt"
 
 func main() {
-	var name string
+	// const firstName string = "Rimuru"
+	// const lastName = "Tempest"
+	// const age = 18
 
-	name = "Rimuru Tempest"
-	fmt.Println(name)
-
-	name = "Benimaru"
-	fmt.Println(name)
-
-	var age = 18
-	fmt.Println(age)
-
-	gender := "Male"
-	fmt.Println(gender)
-
-	var (
+	// Multiple Declaration
+	const (
 		firstName = "Rimuru"
 		lastName  = "Tempest"
+		age       = 10
 	)
+
+	// Error,
+	// Nilai constant tidak dapat diubah
+	// firstName = "Veldanava"
+	// age = 24
+
 	fmt.Println(firstName)
 	fmt.Println(lastName)
+	fmt.Println(age)
 }
-
 ```
