@@ -1,29 +1,58 @@
 # Belajar Go-Lang Dasar
 
-## Tipe Data String
+## Deklarasi Variable
 
-### Tipe data string diisi dengan "(tanda petik dua) dan diakhiri dengan "(tanda petik dua lagi)
+### Kata kunci var
+```
+var name string
+name = "Rimuru Tempest"
+```
 
-## Fungsi untuk Tipe Data String
+### Mengisi nilai default
+```
+var name = "Rimuru Tempest"
+```
 
-1. len("string") => Untuk menghitung jumlah karakter
-2. "string"[number] => Untuk mengambil karakter pada posisi yang ditentukan
+### Tanpa menggunakan kata kunci var (:=)
+```
+name := "Rimuru Tempest"
+```
 
-### Buat file string.go
+## Deklarasi Multiple Variable
+```
+var (
+	firstName = "Rimuru"
+	lastName = "Tempest"
+)
+```
 
+## Buat file variable.go
 ```
 package main
 
 import "fmt"
 
 func main() {
-	fmt.Println("Ini adalah Tipe Data String")
+	var name string
 
-	// Fungsi di String
-	fmt.Println(len("Ini berjumlah 16"))
+	name = "Rimuru Tempest"
+	fmt.Println(name)
 
-	// Result bilangan bit
-	fmt.Println("Aku adalah Rimuru"[0])
-	fmt.Println("Aku adalah Rimuru"[1])
+	name = "Benimaru"
+	fmt.Println(name)
+
+	var age = 18
+	fmt.Println(age)
+
+	gender := "Male"
+	fmt.Println(gender)
+
+	var (
+		firstName = "Rimuru"
+		lastName  = "Tempest"
+	)
+	fmt.Println(firstName)
+	fmt.Println(lastName)
 }
+
 ```
