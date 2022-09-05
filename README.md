@@ -28,7 +28,7 @@ firstName = "Veldanava"
 lastName = "Milim"
 ```
 
-## Buat file variable.go
+## Buat file constant.go
 ```
 package main
 
